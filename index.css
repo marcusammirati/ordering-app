@@ -1,0 +1,303 @@
+body {
+    margin: auto;
+    background: #fff;
+    width: 600px;
+    height: 1161px;
+    font-family: Smythe;
+    font-weight: 400;
+    
+} 
+
+@font-face {
+    font-family: Smythe;
+    src: url("Smythe.zip");
+}
+
+
+header {
+    height: 167px;
+    background-image: url("diner.png");
+    font-size: 45px;
+    color: white;
+    padding: 0 46px;
+    background-size: 100%; 
+       
+}
+
+#title {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-shadow: 2px 2px black;    
+}
+
+#slogan{
+    font-size: 45px;
+    font-style: italic;
+    color: white;
+    text-shadow: 2px 2px black;
+    margin-top: 0px;
+    
+}
+
+.menu-item{
+    margin: auto;
+    margin-top: 50px;
+    align-items: top;
+    display: flex;
+    justify-content: space-between;
+    font-size: 28px; 
+    border-bottom: 1px solid gray;
+    width: 508px;
+    height: 200px;
+    column-gap: 30px;
+}
+
+.item-text {
+    margin-right: auto;
+}
+
+.item-pic, h3 {
+    margin-top: 5px;
+    padding: 0;
+    
+}
+
+.item-pic {
+    font-size: 72px;
+}
+
+.item-price {
+    
+    margin-top: 5px; 
+    padding: 0;
+    
+}
+
+.add-btn {
+    width: 50px;
+    height: 50px;
+    border: 1.5px #DEDEDE;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4px;
+    margin-top: 5px;  
+    
+}
+
+.add-btn:hover {
+    cursor: pointer;
+
+}
+
+.add-btn:active {
+    background-color: darkslategray;
+}
+
+
+
+.hidden {
+    visibility: hidden;
+}
+
+.total{
+    display: flex;
+    flex-direction: column;
+    margin-top: px;
+    padding: 0 30px;
+  
+}
+
+.total-section{
+    display: flex;
+    justify-content: center;
+}
+
+.total-details {
+     padding-bottom: 31px;
+    border-bottom: 1px solid #393333;
+}
+
+
+
+.total-price, .total-price-value {
+    font-size: 28px;
+    
+}
+
+#details {
+    text-align: center;
+    
+}
+
+
+
+.order-item{
+   display: flex;
+   align-items: center;  
+    
+}
+
+.order-price {
+      font-size: 20px;
+    margin-left: auto;
+    color: #8B8B8B;
+}
+
+
+.total-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-container {
+    margin: 15px 0 15px 0;
+}
+
+.remove-item-btn{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    border: none;
+    background: none;
+    color: lightgray;
+     margin-left: 13px;
+}
+
+.total-section p {
+    font-size: 28px;
+    text-align: center;
+    
+}
+
+.order-item p {
+    font-size: 28px;
+    padding: 0pxl
+}
+
+.complete-order-btn {
+    background: #16DB99;
+    border: none;
+    padding: 5px 20px;
+    width: 100%;
+    height: 60px;
+    color: whitesmoke;
+    font-size: 20px;
+
+}
+
+.complete-order-btn:hover {
+    cursor: pointer;
+}
+
+.complete-order-btn:active{
+    background-color: darkgreen;
+}
+
+/* payment form */
+
+#modal {
+    border: 1px solid #16DB99;
+    width: 524px;
+    height: 542px;
+    position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+    margin: auto;
+    padding: 20px 25px;
+    border: 1.3px solid black;
+    z-index: 3;
+    background-color: whitesmoke;
+
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 2;
+}
+
+#modal h2 {
+    
+    font-size: 24px;
+    font-family: Verdana;
+    margin-bottom: 50px;
+}
+
+input {
+    display: flex;
+   width: 475px;
+   height: 71px;
+   border-radius: 3px;
+   border: 1 px solid gray;
+   margin: 20px;
+   text-indent: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+#pay-btn {
+    background: #16DB99;
+    border: none;
+    padding: 5px 20px;
+    width: 94.5%;
+    height: 60px;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+#pay-btn:hover{
+    cursor: pointer;
+}
+
+#pay-btn:active{
+    background-color: darkgreen;
+}
+
+.close-btn {
+    position: absolute;
+    color: red;
+    left: 520px;
+    
+    top: -55px;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.modal-container {
+    position: relative;
+}
+
+
+/* final message */
+
+.order-thanks {
+    
+    width: 504px;
+    height: 120px;
+    background: #ECFDF5;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 3px;
+}
